@@ -1,1 +1,22 @@
+server:
+  port: 8080
 
+settings: 
+  Marvelkey:
+    public: 1234
+    private: 5678
+
+web:
+  cors:
+    allow-origin: '*'
+
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+  datasource:
+    url: jdbc:mysql://localhost:3304/marvel
+    username: root
+    password: root
+    platform: mysql
+    initialization-mode: never
